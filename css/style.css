@@ -38,7 +38,7 @@ svg {
 
 
 /*******************
- Diffritiate map stroke incase of disparances
+	Diffritiate map stroke incase of disparances
 *******************/
 svg#zimbabwe .outline {
 	stroke-width: 1.5;
@@ -46,4 +46,14 @@ svg#zimbabwe .outline {
 
 svg#harare .outline {
 	stroke-width: 1;
+}
+
+
+/*******************
+ 	SVG Pan Zoom Styling
+*******************/
+.svg-pan-zoom-control {
+    cursor: pointer;
+    fill: black;
+    fill-opacity: 0.5;
 }

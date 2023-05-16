@@ -5,3 +5,20 @@ tippy('[data-tippy-content]', {
 	delay: [100, 100],
 	followCursor: true,
 });
+
+svgPanZoom('.svg', {
+	viewportSelector: '.svg-pan-zoom_viewport',
+	panEnabled: true,
+	controlIconsEnabled: true,
+	zoomEnabled: true,
+	dblClickZoomEnabled: false,
+	mouseWheelZoomEnabled: true,
+	preventMouseEventsDefault: true,
+	zoomScaleSensitivity: 0.2,
+	minZoom: 0.5,
+	maxZoom: 10,
+	fit: true,
+	contain: false,
+	center: true,
+	refreshRate: 1
+});
