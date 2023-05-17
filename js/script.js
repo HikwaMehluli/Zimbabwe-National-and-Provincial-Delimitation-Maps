@@ -25,8 +25,7 @@ svgPanZoom('.svg', {
 	fit: true,
 	contain: false,
 	center: true,
-	// refreshRate: 'auto',
-	refreshRate: 100,
+	refreshRate: 'auto',
 
 	// beforeZoom: function(){},
 	// onZoom: function(){},
