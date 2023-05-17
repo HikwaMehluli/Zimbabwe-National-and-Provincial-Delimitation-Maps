@@ -16,8 +16,7 @@ svg {
 	width: 100%;
 }
 
-.outline,
-polygon {
+.outline {
 	border: none;
 	outline: none;
 	fill: var(--color-active);
@@ -29,8 +28,7 @@ polygon {
 	transition: all 0.5s;
 }
 
-.outline:hover,
-	polygon:hover {
+.outline:hover {
 	cursor: pointer;
 	border: none;
 	outline: none;
