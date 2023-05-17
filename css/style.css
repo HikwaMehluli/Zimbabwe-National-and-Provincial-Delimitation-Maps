@@ -25,7 +25,7 @@ svg {
 	/* stroke-linecap:round; */
 	/* stroke-linejoin:round; */
 	stroke-miterlimit: 5;
-	transition: all 0.6s;
+	transition: all 0.5s;
 }
 
 .outline:hover {
@@ -57,6 +57,7 @@ svg#harare .outline {
 	fill: black;
 	fill-opacity: 0.5 !important;
 }
+
 .svg-pan-zoom-control:hover {
 	fill-opacity: 0.8;
 }
@@ -68,4 +69,62 @@ svg#harare .outline {
 
 .svg-pan-zoom-control-background {
 	fill-opacity: 0.8;
+}
+
+
+/********************************
+ 	MODAL POPUP SCRIPT
+********************************/
+
+/* --- Required CSS (not customizable) --- */
+.modal {
+	display: none;
+}
+
+.modal:target {
+	display: flex;
+}
+
+/* --- Required CSS (customizable) --- */
+.modal {
+	text-align: left;
+	backdrop-filter: blur(2px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 2rem;
+}
+
+.modal:target {
+	justify-content: space-around;
+	align-items: center;
+}
+
+.modal__overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	cursor: default;
+}
+
+.modal__content {
+	min-width: 480px;
+	position: relative;
+	background-color: #f5f5f5;
+	padding: 2rem;
+}
+
+.modal__close {
+	color: initial;
+	text-decoration: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 0.5rem;
+	display: inline-block;
 }
