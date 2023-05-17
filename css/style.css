@@ -1,5 +1,5 @@
 :root {
-	--not-active: #e6e7b6;
+	--bg-color: #b7b9a8;
 	--color-active: #a8a965;
 	--color-hover: #5f6035;
 	--color-stroke: black;
@@ -7,11 +7,11 @@
 
 body {
 	margin: 0 auto;
-	background-color: #ecf0f1;
+	background-color: var(--bg-color);
 }
 
 svg {
-	background-color: #ecf0f1;
+	background-color: var(--bg-color);
 	height: 100vh;
 	width: 100%;
 }
@@ -53,7 +53,19 @@ svg#harare .outline {
  	SVG Pan Zoom Styling
 *******************/
 .svg-pan-zoom-control {
-    cursor: pointer;
-    fill: black;
-    fill-opacity: 0.5;
+	cursor: pointer;
+	fill: black;
+	fill-opacity: 0.5 !important;
+}
+.svg-pan-zoom-control:hover {
+	fill-opacity: 0.8;
+}
+
+.svg-pan-zoom-control-background {
+	fill: var(--bg-color);
+	fill-opacity: 0.5;
+}
+
+.svg-pan-zoom-control-background {
+	fill-opacity: 0.8;
 }
