@@ -11,34 +11,34 @@ tippy('[data-tippy-content]', {
 // SVG Pan Zoom
 // https://github.com/ariutta/svg-pan-zoom
 //
-// svgPanZoom('.svg', {
-// 	viewportSelector: '.svg-pan-zoom_viewport',
-// 	panEnabled: true,
-// 	controlIconsEnabled: true,
-// 	zoomEnabled: true,
-// 	dblClickZoomEnabled: false,
-// 	mouseWheelZoomEnabled: true,
-// 	preventMouseEventsDefault: true,
-// 	zoomScaleSensitivity: 0.2,
-// 	minZoom: 0.5,
-// 	maxZoom: 10,
-// 	fit: true,
-// 	contain: false,
-// 	center: true,
-// 	refreshRate: 'auto',
+svgPanZoom('.svg', {
+	viewportSelector: '.svg-pan-zoom_viewport',
+	panEnabled: true,
+	controlIconsEnabled: true,
+	zoomEnabled: true,
+	dblClickZoomEnabled: false,
+	mouseWheelZoomEnabled: true,
+	preventMouseEventsDefault: true,
+	zoomScaleSensitivity: 0.2,
+	minZoom: 0.5,
+	maxZoom: 10,
+	fit: true,
+	contain: false,
+	center: true,
+	refreshRate: 'auto',
 
-// 	// beforeZoom: function(){},
-// 	// onZoom: function(){},
-// 	// beforePan: function(){},
-// 	// onPan: function(){
-// 	// 	console.log('I am Panning')
-// 	// },
-// 	// onUpdatedCTM: function(){
-// 	// 	document.getElementById("link").addEventListener('click', function(e){
-// 	// 		e.preventDefault()
-// 	// 		console.log('I was Clicked!', e);
-// 	// 	});
-// 	// },
-// 	// customEventsHandler: {},
-// 	// eventsListenerElement: null
-// });
+	// beforeZoom: function(){},
+	// onZoom: function(){},
+	// beforePan: function(){},
+	// onPan: function(){
+	// 	console.log('I am Panning')
+	// },
+	// onUpdatedCTM: function(){
+	// 	document.getElementById("link").addEventListener('click', function(e){
+	// 		e.preventDefault()
+	// 		console.log('I was Clicked!', e);
+	// 	});
+	// },
+	// customEventsHandler: {},
+	// eventsListenerElement: null
+});
