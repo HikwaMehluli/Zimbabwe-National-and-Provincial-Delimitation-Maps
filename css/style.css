@@ -3,6 +3,9 @@
 	--color-active: #a8a965;
 	--color-hover: #5f6035;
 	--color-stroke: black;
+	--color-blue: #070f66;
+	--color-black: #222222;
+	--color-white: #ffffff;
 }
 
 body {
@@ -61,10 +64,6 @@ ul.pan-controls {
 	text-align: center;
 }
 
-/* ul.pan-controls>li> {
-	height: 20px;
-} */
-
 ul.pan-controls>li {
 	display: inline-block;
 	font-size: 18px;
@@ -72,12 +71,13 @@ ul.pan-controls>li {
 	width: 30px;
 	height: 30px;
 	border-radius: 36px;
-	background-color: #222222;
-	color: #fff;
+	background-color: var(--color-black);
+	color: var(--color-white);
+	cursor: pointer;
 	margin: 0 3px 3px 0;
 }
 
 ul.pan-controls>li:hover {
 	text-decoration: none;
-	background-color: #ee7c22;
+	background-color: var(--color-blue);
 }
