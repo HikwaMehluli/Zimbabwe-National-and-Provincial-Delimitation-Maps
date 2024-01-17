@@ -6,13 +6,15 @@
 }
 
 body {
-	margin: 0 auto;
 	background-color: var(--bg-color);
+	margin: 0 auto;
+	width: 95%;
+	max-width: 1200px;
 }
 
 svg {
 	background-color: var(--bg-color);
-	height: 100vh;
+	height: 500px;
 	width: 100%;
 }
 
@@ -52,6 +54,30 @@ svg#harare .outline {
 /*******************
  	SVG Pan Zoom Styling
 *******************/
-.svg-pan-zoom-control {
-	fill-opacity: 0.5 !important;
+ul.pan-controls {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+/* ul.pan-controls>li> {
+	height: 20px;
+} */
+
+ul.pan-controls>li {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	border-radius: 36px;
+	background-color: #222222;
+	color: #fff;
+	margin: 0 3px 3px 0;
+}
+
+ul.pan-controls>li:hover {
+	text-decoration: none;
+	background-color: #ee7c22;
 }
