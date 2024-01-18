@@ -68,7 +68,10 @@ svg#harare .outline {
 /*******************
  	SVG Pan Zoom Styling
 *******************/
+
+/* TODO: Fix Controls overlay on maps */
 .pan-controls {
+	display: inline-flex;
 	padding: 0;
 	position: absolute;
 	bottom: 15px;
