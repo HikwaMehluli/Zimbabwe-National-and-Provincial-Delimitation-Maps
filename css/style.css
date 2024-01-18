@@ -22,8 +22,10 @@ body {
 
 svg {
 	background-color: var(--bg-color);
-	height: 500px;
+	border: 2px solid var(--color-hover);
+	height: 450px;
 	width: 100%;
+	margin-top: 16px;
 }
 
 .outline {
