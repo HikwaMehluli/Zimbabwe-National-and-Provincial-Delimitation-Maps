@@ -20,12 +20,16 @@ body {
 	max-width: 1200px;
 }
 
-svg {
+.map-container {
 	background-color: var(--bg-color);
 	border: 2px solid var(--color-hover);
+	margin: 20px 0 20px 0;
+	position: relative;
+}
+
+svg {
 	height: 450px;
 	width: 100%;
-	margin-top: 16px;
 }
 
 .outline {
@@ -64,26 +68,29 @@ svg#harare .outline {
 /*******************
  	SVG Pan Zoom Styling
 *******************/
-ul.pan-controls {
+.pan-controls {
 	padding: 0;
+	position: absolute;
+	bottom: 15px;
+	left: 18px;
 	width: 100%;
-	text-align: center;
 }
 
-ul.pan-controls>li {
-	display: inline-block;
-	font-size: 22px;
-	line-height: 40px;
-	width: 40px;
-	height: 40px;
+.pan-controls>span {
 	border-radius: 50%;
 	background-color: var(--color-hover);
 	color: var(--color-white);
 	cursor: pointer;
-	margin: 0 5px 5px 0;
+	display: inline-block;
+	font-size: 25px;
+	line-height: 45px;
+	width: 45px;
+	height: 45px;
+	margin: 0 10px 0 0;
+	text-align: center;
 	transition: var(--transition);
 }
 
-ul.pan-controls>li:hover {
+.pan-controls>span:hover {
 	background-color: var(--color-black);
 }
