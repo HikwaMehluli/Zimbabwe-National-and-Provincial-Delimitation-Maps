@@ -29,6 +29,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-minus:before { content: '\e800'; } /* '' */
-.icon-plus:before { content: '\e801'; } /* '' */
-.icon-refresh:before { content: '\e802'; } /* '' */
+.icon-minus:before {
+	content: '\e800';
+	color: var(--color-white);
+}
+.icon-plus:before {
+	content: '\e801';
+	color: var(--color-white);
+}
+.icon-refresh:before {
+	content: '\e802';
+	color: var(--color-white);
+}
