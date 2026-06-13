@@ -6,12 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons-map.css">
 </head>
 
 <body>
-    <div class="map-container">
+    <header>
+        <a href="index.html">
+            <h1>Zimbabwe Provincial Map</h1>
+        </a>
+        <p>Provinces are constituent political entities of Zimbabwe. Zimbabwe currently has ten provinces, two of which are cities with provincial status. Zimbabwe is a unitary state, and its provinces exercise only the powers that the central government chooses to delegate.</p>
+        <!-- Bread Crumb -->
+    </header>
+
+    <main class="map-container">
         <svg id="harare" class="svg" x="0px" y="0px" viewBox="0 0 1683.75 1190.24">
             <polyline id="Zengeza_West" data-tippy-content="Zengeza West" class="outline" points="743.3,1000.71 744.12,1001.43 748.39,1003.49 752.73,1002.53 759.55,999.2 
                 762.05,998.21 769.58,1000.11 773.49,995.36 775.92,995.36 780.65,1001.55 791.95,1006.9 798.41,1009.88 799.29,1010.31 
@@ -1110,7 +1121,7 @@
                 <div class="icon-refresh"></div>
             </span>
         </div>
-    </div>
+    </main>
 
     <script src='js/popper.min.js'></script>
     <script src='js/tippy.min.js'></script>

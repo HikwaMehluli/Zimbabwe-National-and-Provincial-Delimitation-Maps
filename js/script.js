@@ -1,5 +1,5 @@
 // 
-// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization/
+// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization
 // 
 tippy('[data-tippy-content]', {
 	arrow: true,
@@ -10,7 +10,7 @@ tippy('[data-tippy-content]', {
 
 
 // 
-// SVG Pan Zoom
+// SVG Pan Zoom - https://github.com/bumbu/svg-pan-zoom#how-to-use
 // 
 // TODO: Make SVG Clickable, https://www.freecodecamp.org/news/how-to-make-clickable-svg-map-html-css/
 
@@ -29,35 +29,13 @@ var panZoom = svgPanZoom('.svg', {
 	contain: true,
 	center: true,
 	refreshRate: 'auto',
-
-	// beforeZoom: function(){},
-	// onZoom: function(){},
-	// beforePan: function(){},
-	// onPan: function(){},
-	// onUpdatedCTM: function(){},
-
-	// customEventsHandler: {
-	// 	// Halt all touch events
-	// 	haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],
-
-	// 	// Init custom events handler
-	// 	init: function(options) {
-	// 	  // Init Hammer
-	// 	  this.hammer = Hammer(options.svgElement)
-	
-	// 	  // Handle double tap
-	// 	  this.hammer.on('doubletap', function(ev){
-	// 		options.instance.zoomIn()
-	// 	  })
-	// 	},
-	
-	// 	// Destroy custom events handler
-	// 	destroy: function(){
-	// 	  this.hammer.destroy()
-	// 	}
-	// },
-
-	// eventsListenerElement: null
+	beforeZoom: function(){},
+	onZoom: function(){},
+	beforePan: function(){},
+	onPan: function(){},
+	onUpdatedCTM: function(){},
+	customEventsHandler: {},
+	eventsListenerElement: null
 });
 
 document.getElementById('zoom-in').addEventListener('click', function (ev) {

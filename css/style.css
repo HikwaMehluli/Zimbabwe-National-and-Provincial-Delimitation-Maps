@@ -18,6 +18,11 @@ body {
 	margin: 0 auto;
 	width: 95%;
 	max-width: 1200px;
+
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	/* font-weight: <weight>; */
+	font-style: normal;
 }
 
 header {
@@ -32,7 +37,7 @@ header {
 	}
 }
 
-.map-container {
+main.map-container {
 	background-color: var(--bg-color);
 	border: 2px solid var(--color-hover);
 	margin: 20px 0 20px 0;
