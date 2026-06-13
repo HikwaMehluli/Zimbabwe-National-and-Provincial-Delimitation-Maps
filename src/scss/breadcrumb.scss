@@ -1,0 +1,46 @@
+.breadcrumb {
+    padding: 0.5em 1em;
+    background-color: var(--color-active);
+    border-radius: .25em;
+}
+
+.breadcrumb::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    float: left;
+    margin: 0.5em 0;
+}
+
+// separator between items
+.breadcrumb li::after {
+    display: inline-block;
+    content: '\00bb';
+    margin: 0 .6em;
+    color: var(--color-black);
+}
+
+// hide separator after the last item
+.breadcrumb li:last-of-type::after {
+    display: none;
+}
+
+// Single step
+.breadcrumb li>* {
+    display: inline-block;
+    color: var(--color-black);
+}
+
+// Selected step
+.breadcrumb li.current>* {
+    color: var(--color-hover);
+}
+
+// Steps already visited
+.breadcrumb a:hover {
+    color: var(--color-hover);
+}
