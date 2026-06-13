@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
+<defs>
+<font id="interactive-map" horiz-adv-x="1000" >
+<font-face font-family="interactive-map" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="minus" unicode="&#xe800;" d="M729 455q44 0 74-32t31-73-31-74-74-30l-625 0q-44 0-74 30t-30 74q0 43 31 74t73 31l625 0z" horiz-adv-x="834" />
+
+<glyph glyph-name="plus" unicode="&#xe801;" d="M729 454q44 0 74-31t31-73-31-73-74-30l-208 3 0-212q0-43-30-73t-75-31-73 31-30 73l3 212-212-3q-44 0-74 30t-30 73 30 73 74 31l212 0-3 209q0 42 30 73t73 31 75-31 30-73l0-209 208 0z" horiz-adv-x="834" />
+
+<glyph glyph-name="refresh" unicode="&#xe802;" d="M781 352q0-162-115-277-108-109-256-114l70-68q15-15 15-37t-15-37-37-15q-22 0-37 15l-193 193 193 193q15 15 37 15t37-15 15-37-15-36l-65-65q104 7 179 82 84 84 84 203 0 55-18 95t-60 83q-15 15-15 37t15 37 37 15 37-15q107-107 107-252z m-677-2q0-55 17-95t60-83q15-15 15-37t-15-37-36-15q-22 0-37 15-108 107-108 252 0 162 115 277 106 106 255 113l-69 69q-15 15-15 36t15 37 37 15 37-15l194-193-194-192q-16-17-36-17-21 0-38 17-15 15-15 36t15 36l67 68q-104-8-180-84-84-84-84-203z" horiz-adv-x="781" />
+</font>
+</defs>
+</svg>

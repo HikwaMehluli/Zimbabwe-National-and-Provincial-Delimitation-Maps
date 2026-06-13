@@ -10,7 +10,6 @@ lerna-debug.log*
 ai
 AGENTS.md
 /node_modules
-/dist
 
 # Editor directories and files
 .vscode/*

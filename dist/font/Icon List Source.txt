@@ -1,0 +1,4 @@
+Fontello - Typicons v2.0.2
+- minus
+- plus
+- refresh
