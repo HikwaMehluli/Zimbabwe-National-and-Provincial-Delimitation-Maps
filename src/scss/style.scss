@@ -87,12 +87,12 @@ svg#harare .outline {
 *******************/
 
 .pan-controls {
-	display: inline-flex;
+	display: block;
 	padding: 0;
 	position: absolute;
 	bottom: 15px;
 	left: 18px;
-	width: 100%;
+	width: auto;
 }
 
 .pan-controls>span {
