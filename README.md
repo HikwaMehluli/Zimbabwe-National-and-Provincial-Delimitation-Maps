@@ -11,6 +11,7 @@ Real world examples of websites in Zimbabwe with interactive SVG's:
 ## Features
 
 - **National overview** — Zoomable SVG map of all 10 provinces on `index.html`
+- **Coat of arms** — Zimbabwe coat of arms logo in the header of every page
 - **Per-province pages** — Detailed ward boundaries for each province with breadcrumb navigation
 - **Pan & zoom** — Drag to pan, buttons to zoom in/out/reset
 - **Tooltips** — Hover over any region to see its name (powered by TippyJS)
@@ -82,6 +83,8 @@ Run `npm run js-dev` (development, unminified) or `npm run js-prod` (production,
 ├── index.html              National overview map
 ├── {province}.html          10 per-province ward maps
 ├── dist/
+│   ├── img/
+│   │   └── zimbabwe_coat_of_arms.svg  Logo in every page header
 │   ├── js/
 │   │   └── app.js           Webpack-bundled JS (tippy.js, Popper, svg-pan-zoom + init code)
 │   ├── css/
@@ -113,6 +116,13 @@ Map colours are controlled via CSS custom properties defined in `src/scss/style.
 | `--color-active` | `#a8a965` | Fill colour of regions |
 | `--color-hover` | `#5f6035` | Hover colour |
 | `--color-stroke` | `black` | Stroke outline colour |
+
+### Header logo
+
+Every page header displays **Zimbabwe's coat of arms** (`dist/img/zimbabwe_coat_of_arms.svg`). It sits inside a `<span>` alongside the page `<h1>`, linked to `index.html`. Styled in `src/scss/style.scss`:
+
+- **Default:** 200px wide, floated left with 10px padding-right
+- **Mobile (<768px):** 150px wide (responsive media query)
 
 ### Rebuilding CSS
 
