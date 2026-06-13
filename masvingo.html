@@ -7,14 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masvingo West</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/icons-map.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/app.css">
 </head>
 
 <body>
-    <div class="map-container">
+    <header>
+        <a href="index.html">
+            <h1>Zimbabwe National and Provincial Delimitation Maps</h1>
+        </a>
+        <h3>Provinces are constituent political entities of Zimbabwe. Zimbabwe currently has ten provinces, two of which are cities with provincial status. Zimbabwe is a unitary state, and its provinces exercise only the powers that the central government chooses to delegate.</h3>
+        <!-- Bread Crumb -->
+    </header>
+
+    <main class="map-container">
         <svg id="Masvingo" class="svg" x="0px" y="0px" viewBox="0 0 1190.2 1683.8">
             <polygon id="Zaka_South" data-tippy-content="Zaka South" class="outline" points="753.3,698.5 753.2,698.4 753.2,698.5 752.9,698.3 752.5,698.2 752.2,698.1 
                 751.9,698.2 751.5,698.2 751.3,698.3 750.8,697.8 750.2,697.8 749.7,698 749.6,698.1 749.3,698.1 749,698.1 748.8,698 748.3,697.9 
@@ -5720,11 +5727,11 @@
                 <div class="icon-refresh"></div>
             </span>
         </div>
-    </div>
+    </main>
 
-    <script src='js/popper.min.js'></script>
-    <script src='js/tippy.min.js'></script>
-    <script src='js/svg-pan-zoom.min.js'></script>
-    <script src="js/script.js"></script>
+    <script src='./dist/js/popper.min.js'></script>
+    <script src='./dist/js/tippy.min.js'></script>
+    <script src='./dist/js/svg-pan-zoom.min.js'></script>
+    <script src="./dist/js/script.js"></script>
 </body>
 </html>

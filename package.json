@@ -1,0 +1,20 @@
+{
+	"name": "zim-svg-map",
+	"version": "1.0.0",
+	"description": "Interactive SVG maps of Zimbabwe's 10 provinces with detailed ward boundaries.",
+	"author": "Mehluli Hikwa",
+	"scripts": {
+		"start:public": "http-server -c-1",
+		"start:root": "http-server . -c-1",
+		"css-prod": "sass --no-source-map --watch src/scss/_entry.scss:dist/css/app.css --style compressed",
+		"css-dev": "sass --no-source-map --watch src/scss/_entry.scss:dist/css/app.css",
+		"js-prod": "webpack --mode production --watch",
+		"js-dev": "webpack --mode development --watch"
+	},
+	"devDependencies": {
+		"http-server": "^14.1.1",
+		"sass": "^1.100.0",
+		"webpack": "^5.107.2",
+		"webpack-cli": "^7.0.3"
+	}
+}
