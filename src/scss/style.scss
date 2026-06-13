@@ -34,6 +34,18 @@ header {
 		&:hover {
 			color: var(--color-hover);
 		}
+
+		span img {
+			width: 200px;
+			max-width: 100%;
+			height: auto;
+			float: left;
+			padding-right: 10px;
+
+			@media (max-width: 768px) {
+				width: 150px;
+			}
+		}		
 	}
 }
 
