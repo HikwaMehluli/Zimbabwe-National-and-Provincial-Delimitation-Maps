@@ -89,6 +89,7 @@ header {
 main.map-container {
 	background-color: var(--bg-color);
 	border: 2px solid var(--color-hover);
+	border-radius: .30em;
 	margin: 20px 0 20px 0;
 	position: relative;
 }
@@ -126,15 +127,10 @@ svg#zimbabwe .outline {
 	stroke-width: 1.5;
 }
 
-svg#harare .outline {
-	stroke-width: 1;
-}
-
 
 /*******************
  	SVG Pan Zoom Styling
 *******************/
-
 .pan-controls {
 	display: block;
 	padding: 0;
@@ -157,8 +153,8 @@ svg#harare .outline {
 	margin: 0 10px 0 0;
 	text-align: center;
 	transition: var(--transition);
-}
 
-.pan-controls>span:hover {
-	background-color: var(--color-black);
+	&:hover {
+		background-color: var(--color-black);
+	}
 }

@@ -6,35 +6,39 @@
 
 .breadcrumb li {
     display: inline-block;
+
+    // Separator between links
+    &::after {
+        display: inline-block;
+        content: '\00bb';
+        margin: 0 .6em;
+        color: var(--color-black);
+    }
+
+    // Hide separator after the last link
+    &:last-of-type::after {
+        display: none;
+    }
+
+    // Current selected step
+    .current>* {
+        color: var(--color-hover);
+        margin-top: 2px; // Quick Fix of positioning
+    }
 }
 
-// Go back Arrow
-.breadcrumb li a:first-of-type:before {
-    display: inline-block;
-    content: "\25C0";
-    margin-right: 8px;
-}
-
-// Separator between items
-.breadcrumb li::after {
-    display: inline-block;
-    content: '\00bb';
-    margin: 0 .6em;
+.breadcrumb li a {
     color: var(--color-black);
-}
+    text-decoration: none;
 
-// Hide separator after the last item
-.breadcrumb li:last-of-type::after {
-    display: none;
-}
+    &:hover {
+        color: var(--color-hover);
+    }
 
-// Selected step
-.breadcrumb li.current>* {
-    color: var(--color-hover);
-    margin-top: 2px; // Quick Fix of positioning
-}
-
-// Steps already visited
-.breadcrumb a:hover {
-    color: var(--color-hover);
+    // Go back Arrow
+    &:first-of-type:before {
+        display: inline-block;
+        content: "\25C0";
+        margin-right: 8px;
+    }
 }
