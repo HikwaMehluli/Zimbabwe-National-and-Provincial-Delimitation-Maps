@@ -26,7 +26,13 @@ body {
 }
 
 header {
-	a {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 0 10px;
+	margin-bottom: 10px;
+
+	a.header-link {
+		grid-row: 1 / 4;
 		color: var(--color-black);
 		text-decoration: none;
 		transition: var(--transition);
@@ -35,17 +41,48 @@ header {
 			color: var(--color-hover);
 		}
 
-		span img {
+		img {
 			width: 200px;
 			max-width: 100%;
 			height: auto;
-			float: left;
-			padding-right: 10px;
+			display: block;
 
 			@media (max-width: 768px) {
 				width: 150px;
 			}
-		}		
+		}
+	}
+
+	h1 {
+		margin: 0;
+		align-self: center;
+	}
+
+	.header-description {
+		margin: 0.5em 0;
+		font-size: 0.9em;
+	}
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+
+		a.header-link {
+			grid-row: auto;
+
+			img {
+				width: 120px;
+			}
+		}
+
+		h1 {
+			align-self: auto;
+		}
+
+		.header-description {
+			text-align: left;
+		}
 	}
 }
 

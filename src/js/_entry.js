@@ -1,4 +1,3 @@
-import './popper.min.js';
 import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css'; // optional for styling
 import svgPanZoom from './svg-pan-zoom.min.js'
@@ -21,7 +20,7 @@ const panZoom = svgPanZoom('.svg', {
 	controlIconsEnabled: false,
 	zoomEnabled: true,
 	dblClickZoomEnabled: false,
-	mouseWheelZoomEnabled: true,
+	mouseWheelZoomEnabled: false,
 	preventMouseEventsDefault: true,
 	zoomScaleSensitivity: 0.2,
 	minZoom: 0.5,

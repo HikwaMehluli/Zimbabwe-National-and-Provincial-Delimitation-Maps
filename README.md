@@ -39,7 +39,7 @@ Real world examples of websites in Zimbabwe with interactive SVG's:
 - **SVG maps** — All map coordinates are inline `<polyline points="...">` in the HTML (no external data files)
 - **Libraries** (bundled into `dist/js/app.js` via webpack):
   - `svg-pan-zoom` — Pan and zoom controls
-  - `TippyJS` + `Popper.js` — Tooltip popups
+  - `TippyJS` — Tooltip popups (includes Popper.js under the hood)
 - **Fonts**: Roboto + Pliant via Google Fonts
 - **Build tools**: Sass (SCSS → CSS), Webpack (JS bundling + CSS inlining)
 
@@ -71,7 +71,7 @@ npm install
 ### JS compilation pipeline
 
 1. **Entry point:** `src/js/_entry.js`
-2. **Webpack** resolves bare imports (`popper.min.js`, `svg-pan-zoom.min.js`) from `src/js/`, and npm imports (`tippy.js`) from `node_modules/`
+2. **Webpack** resolves bare imports (`svg-pan-zoom.min.js`) from `src/js/`, and npm imports (`tippy.js`) from `node_modules/`
 3. **CSS imports** (e.g. `tippy.js/dist/tippy.css`) are inlined into the bundle via `style-loader` + `css-loader`
 4. **Output:** a single `dist/js/app.js` loaded by all HTML pages
 
@@ -86,16 +86,14 @@ Run `npm run js-dev` (development, unminified) or `npm run js-prod` (production,
 │   ├── img/
 │   │   └── zimbabwe_coat_of_arms.svg  Logo in every page header
 │   ├── js/
-│   │   └── app.js           Webpack-bundled JS (tippy.js, Popper, svg-pan-zoom + init code)
+│   │   └── app.js           Webpack-bundled JS (tippy.js, svg-pan-zoom + init code)
 │   ├── css/
 │   │   └── app.css          Compiled SCSS stylesheet
 │   └── font/                Custom icon font (interactive-map)
 ├── src/
 │   ├── js/
 │   │   ├── _entry.js        Webpack entry point
-│   │   ├── popper.min.js    Vendored Popper.js
-│   │   ├── svg-pan-zoom.min.js
-│   │   └── tippy.min.js
+│   │   └── svg-pan-zoom.min.js
 │   └── scss/                SCSS source files
 │       ├── _entry.scss      Entry point — imports all partials
 │       ├── style.scss       Map colours, layout, typography
@@ -119,10 +117,11 @@ Map colours are controlled via CSS custom properties defined in `src/scss/style.
 
 ### Header logo
 
-Every page header displays **Zimbabwe's coat of arms** (`dist/img/zimbabwe_coat_of_arms.svg`). It sits inside a `<span>` alongside the page `<h1>`, linked to `index.html`. Styled in `src/scss/style.scss`:
+Every page header displays **Zimbabwe's coat of arms** (`dist/img/zimbabwe_coat_of_arms.svg`). The logo sits beside the page `<h1>` in a CSS grid layout, extending alongside the description and breadcrumb. Styled in `src/scss/style.scss`:
 
-- **Default:** 200px wide, floated left with 10px padding-right
-- **Mobile (<768px):** 150px wide (responsive media query)
+- **Default:** 200px wide, spans the full header height alongside title, description, and breadcrumb
+- **Mobile (<600px):** 120px wide, stacks centered above the title (single-column grid)
+- **Tablet (600–768px):** 150px wide
 
 ### Rebuilding CSS
 
